@@ -9,7 +9,8 @@ const HomePage= ()=>{
     });
     API.seed()
     .then(res=>
-        test1=res.data.results.forEach(element=>test1.push(((element.name.first)))),
+        res.data.results.forEach(element=>test1.push((element.name.first))),
+        console.log(test1)
         // test2=test1.forEach(element=>console.log(element))
         // console.log(res.data.results)
     );
