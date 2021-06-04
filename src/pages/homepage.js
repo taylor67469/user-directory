@@ -16,11 +16,6 @@ const HomePage= ()=>{
             return datatosort;
         })
     }
-    // const sortByRich = () => {
-    //     setdataObject((data) => {
-    //       const dataToSort = [...data];
-    //       dataToSort.sort((a, b) => Number(a.money) - Number(b.money));
-    //       return dataToSort;
    const sortD=()=>{
         const {name}=[...myState]
         name.sort((a, b) => a - b).reverse()   
